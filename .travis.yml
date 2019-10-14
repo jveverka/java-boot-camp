@@ -2,4 +2,4 @@ dist: xenial
 language: java
 jdk:
   - openjdk11
-script: gradle clean build test
+script: mvn clean install

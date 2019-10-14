@@ -8,3 +8,4 @@
 
 ### Projects
 
+### How to fix bugs

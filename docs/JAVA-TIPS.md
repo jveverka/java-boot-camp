@@ -43,3 +43,14 @@ Use up-to date dependencies. Maven command ``mvn dependency:tree -Dverbose``
 
 ## Create JUnit tests
 Use [JUnit](https://junit.org/junit4/) to create automated tests.
+
+## Recommended Java projects and libraries
+When you are looking for java framework or library:
+* [Awesome Java](https://github.com/akullpp/awesome-java)
+* [Springboot initializr](https://start.spring.io/) and [docs](https://spring.io/docs)
+
+## Recommended 3-rd party projects
+* [Linux Foundation](https://www.linuxfoundation.org/projects/)
+* [Eclipse Foundation](https://projects.eclipse.org/)
+* [Apache foundation](https://www.apache.org/index.html#projects-list)
+

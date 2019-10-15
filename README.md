@@ -18,6 +18,7 @@ mvn clean install
 ### Projects
 * [__java tips__](docs/JAVA-TIPS.md) - documentation project with basic java tips.
 * [__simple-project__](simple-project) - simple maven java project.
+* [__java-beans-demo__](java-bean-demo) - fasterxml jackson serialization and deserialization of java beans.
 
 ### How to fix bugs or contribute
 Check [this guide](https://github.com/jveverka/do-not-ask-why/blob/master/github/README.md) if you want to contribute.

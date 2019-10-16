@@ -4,20 +4,20 @@ import java.util.Objects;
 
 public class UserDataMutable {
 
-    private long id;
+    private Long id;
     private String userName;
     private String role;
 
     public UserDataMutable() {
     }
 
-    public UserDataMutable(long id, String userName, String role) {
+    public UserDataMutable(Long id, String userName, String role) {
         this.id = id;
         this.userName = userName;
         this.role = role;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
@@ -29,7 +29,7 @@ public class UserDataMutable {
         return role;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -46,7 +46,7 @@ public class UserDataMutable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         UserDataMutable that = (UserDataMutable) o;
-        return id == that.id &&
+        return Objects.equals(id, that.id) &&
                 Objects.equals(userName, that.userName) &&
                 Objects.equals(role, that.role);
     }
@@ -54,6 +54,15 @@ public class UserDataMutable {
     @Override
     public int hashCode() {
         return Objects.hash(id, userName, role);
+    }
+
+    @Override
+    public String toString() {
+        return "UserDataMutable{" +
+                "id=" + id +
+                ", userName='" + userName + '\'' +
+                ", role='" + role + '\'' +
+                '}';
     }
 
 }

@@ -7,20 +7,23 @@ import java.util.Objects;
 
 public class UserDataImmutable {
 
-    private final long id;
+    private final Long id;
     private final String userName;
     private final String role;
 
     @JsonCreator
-    public UserDataImmutable(@JsonProperty("id") long id,
+    public UserDataImmutable(@JsonProperty("id") Long id,
                              @JsonProperty("userName") String userName,
                              @JsonProperty("role") String role) {
+        Objects.requireNonNull(id);
+        Objects.requireNonNull(userName);
+        Objects.requireNonNull(role);
         this.id = id;
         this.userName = userName;
         this.role = role;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
@@ -37,7 +40,7 @@ public class UserDataImmutable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         UserDataImmutable that = (UserDataImmutable) o;
-        return id == that.id &&
+        return Objects.equals(id, that.id) &&
                 Objects.equals(userName, that.userName) &&
                 Objects.equals(role, that.role);
     }
@@ -45,6 +48,15 @@ public class UserDataImmutable {
     @Override
     public int hashCode() {
         return Objects.hash(id, userName, role);
+    }
+
+    @Override
+    public String toString() {
+        return "UserDataImmutable{" +
+                "id=" + id +
+                ", userName='" + userName + '\'' +
+                ", role='" + role + '\'' +
+                '}';
     }
 
 }

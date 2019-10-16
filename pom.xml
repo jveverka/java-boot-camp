@@ -14,6 +14,7 @@
     <modules>
        <module>simple-project</module>
        <module>java-bean-demo</module>
+       <module>service-demo</module>
     </modules>
 
 </project>

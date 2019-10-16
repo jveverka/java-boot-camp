@@ -2,7 +2,7 @@ package com.java.bootcamp.projects.javabean;
 
 import java.util.Objects;
 
-public class UserDataMutable {
+public class UserDataMutable implements UserData {
 
     private Long id;
     private String userName;
@@ -17,14 +17,17 @@ public class UserDataMutable {
         this.role = role;
     }
 
+    @Override
     public Long getId() {
         return id;
     }
 
+    @Override
     public String getUserName() {
         return userName;
     }
 
+    @Override
     public String getRole() {
         return role;
     }

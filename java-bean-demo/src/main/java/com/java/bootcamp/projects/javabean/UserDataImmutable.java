@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.Objects;
 
-public class UserDataImmutable {
+public class UserDataImmutable implements UserData {
 
     private final Long id;
     private final String userName;
@@ -23,14 +23,17 @@ public class UserDataImmutable {
         this.role = role;
     }
 
+    @Override
     public Long getId() {
         return id;
     }
 
+    @Override
     public String getUserName() {
         return userName;
     }
 
+    @Override
     public String getRole() {
         return role;
     }

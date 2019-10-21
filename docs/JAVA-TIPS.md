@@ -38,6 +38,7 @@ Always use logger. Don't use ``System.out.println("my log statement")`` !
 Use well known public maven repositories to check your project dependencies.
 * [maven central](https://search.maven.org/)
 * [jcenter](https://bintray.com/bintray/jcenter)
+* [spring.io](https://repo.spring.io)
 
 Use up-to date dependencies. Maven command ``mvn dependency:tree -Dverbose``
 

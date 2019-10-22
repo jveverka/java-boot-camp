@@ -12,9 +12,10 @@
     <name>bootcamp-aggregator</name>
 
     <modules>
-       <module>simple-project</module>
-       <module>java-bean-demo</module>
-       <module>service-demo</module>
+        <module>simple-project</module>
+        <module>java-bean-demo</module>
+        <module>service-demo</module>
+        <module>mt-demo</module>
     </modules>
 
 </project>

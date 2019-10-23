@@ -20,6 +20,7 @@ mvn clean install
 * [__simple-project__](simple-project) - simple maven java project.
 * [__java-beans-demo__](java-bean-demo) - fasterxml jackson serialization and deserialization of java beans.
 * [__service-demo__](service-demo) - simple data store service.
+* [__mt-demo__](mt-demo) - multi-threading demo.
 
 ### How to fix bugs or contribute
 Check [this guide](https://github.com/jveverka/do-not-ask-why/blob/master/github/README.md) if you want to contribute.

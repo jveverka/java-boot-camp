@@ -16,6 +16,7 @@
         <module>java-bean-demo</module>
         <module>service-demo</module>
         <module>mt-demo</module>
+        <module>lambdas</module>
     </modules>
 
 </project>

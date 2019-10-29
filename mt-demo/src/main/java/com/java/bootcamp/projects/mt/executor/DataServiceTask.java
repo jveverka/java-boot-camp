@@ -1,7 +1,7 @@
-package com.java.bootcamp.projects.mt;
+package com.java.bootcamp.projects.mt.executor;
 
-import com.java.bootcamp.projects.mt.dto.Request;
-import com.java.bootcamp.projects.mt.dto.Response;
+import com.java.bootcamp.projects.mt.executor.dto.Request;
+import com.java.bootcamp.projects.mt.executor.dto.Response;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

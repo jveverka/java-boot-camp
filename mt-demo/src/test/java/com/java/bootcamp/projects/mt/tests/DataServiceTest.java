@@ -1,9 +1,9 @@
 package com.java.bootcamp.projects.mt.tests;
 
-import com.java.bootcamp.projects.mt.DataService;
-import com.java.bootcamp.projects.mt.DataServiceImpl;
-import com.java.bootcamp.projects.mt.dto.Request;
-import com.java.bootcamp.projects.mt.dto.Response;
+import com.java.bootcamp.projects.mt.executor.DataService;
+import com.java.bootcamp.projects.mt.executor.DataServiceImpl;
+import com.java.bootcamp.projects.mt.executor.dto.Request;
+import com.java.bootcamp.projects.mt.executor.dto.Response;
 import org.junit.Assert;
 import org.junit.Test;
 

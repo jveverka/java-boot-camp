@@ -1,4 +1,4 @@
-package com.java.bootcamp.projects.mt.dto;
+package com.java.bootcamp.projects.mt.executor.dto;
 
 public class Request {
 

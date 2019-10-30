@@ -4,12 +4,14 @@ public class Response {
 
     private final String request;
     private final String response;
-    private final String userName;
+    private final String threadLocalContext;
+    private final String staticContext;
 
-    public Response(String request, String response, String userName) {
+    public Response(String request, String response, String threadLocalContext, String staticContext) {
         this.request = request;
         this.response = response;
-        this.userName = userName;
+        this.threadLocalContext = threadLocalContext;
+        this.staticContext = staticContext;
     }
 
     public String getRequest() {
@@ -20,7 +22,12 @@ public class Response {
         return response;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getThreadLocalContext() {
+        return threadLocalContext;
     }
+
+    public String getStaticContext() {
+        return staticContext;
+    }
+    
 }

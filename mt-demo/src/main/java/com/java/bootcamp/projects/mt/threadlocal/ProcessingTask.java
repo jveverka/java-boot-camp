@@ -2,13 +2,15 @@ package com.java.bootcamp.projects.mt.threadlocal;
 
 import com.java.bootcamp.projects.mt.threadlocal.dto.Request;
 import com.java.bootcamp.projects.mt.threadlocal.dto.Response;
+import com.java.bootcamp.projects.mt.threadlocal.dto.StaticContext;
 import com.java.bootcamp.projects.mt.threadlocal.dto.TaskContext;
 
 import java.util.concurrent.CompletableFuture;
 
 public class ProcessingTask implements Runnable {
 
-    public static final ThreadLocal<TaskContext> localTaskContext = new ThreadLocal<>();
+    public static final ThreadLocal<TaskContext> threadLocalContext = new ThreadLocal<>();
+    public static final StaticContext<TaskContext> staticContext = new StaticContext<>();
 
     private final Request request;
     private final ProcessingService processingService;
@@ -25,7 +27,8 @@ public class ProcessingTask implements Runnable {
     @Override
     public void run() {
         try {
-            localTaskContext.set(taskContext);
+            threadLocalContext.set(taskContext);
+            staticContext.setData(taskContext);
             Thread.sleep(1000);
             Response response = processingService.getData(request);
             cfResponse.complete(response);

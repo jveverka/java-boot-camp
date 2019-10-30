@@ -27,12 +27,14 @@ public class ThreadLocalTest {
         Assert.assertNotNull(f1.get());
         Assert.assertEquals(f1.get().getRequest(), "r1");
         Assert.assertEquals(f1.get().getResponse(), "response");
-        Assert.assertEquals(f1.get().getUserName(), "joe");
+        Assert.assertEquals(f1.get().getThreadLocalContext(), "joe");
+        Assert.assertEquals(f1.get().getStaticContext(), "jane");
 
         Assert.assertNotNull(f2.get());
         Assert.assertEquals(f2.get().getRequest(), "r2");
         Assert.assertEquals(f2.get().getResponse(), "response");
-        Assert.assertEquals(f2.get().getUserName(), "jane");
+        Assert.assertEquals(f2.get().getThreadLocalContext(), "jane");
+        Assert.assertEquals(f1.get().getStaticContext(), "jane");
 
     }
 

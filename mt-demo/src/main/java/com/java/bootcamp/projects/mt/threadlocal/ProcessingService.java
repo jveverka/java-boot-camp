@@ -7,8 +7,10 @@ import com.java.bootcamp.projects.mt.threadlocal.dto.TaskContext;
 public class ProcessingService {
 
     public Response getData(Request request) {
-        TaskContext taskContext = ProcessingTask.localTaskContext.get();
-        return new Response(request.getRequest(), "response", taskContext.getUserName());
+        TaskContext tlTaskContext = ProcessingTask.threadLocalContext.get();
+        TaskContext staticTaskContext = ProcessingTask.staticContext.getData();
+        return new Response(request.getRequest(), "response",
+                tlTaskContext.getUserName(), staticTaskContext.getUserName());
     }
 
 }

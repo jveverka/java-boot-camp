@@ -23,7 +23,7 @@ public class StatelessServiceTest {
 
     @ParameterizedTest
     @ValueSource(strings = { "2019-12-01 11:12:30", "2019-08-22 22:08:09" })
-    public void testStateless(String dateTime) throws ParseException {
+    public void testStatelessPositive(String dateTime) throws ParseException {
         Date date = statelessService.getDate(dateTime);
         assertNotNull(date);
     }

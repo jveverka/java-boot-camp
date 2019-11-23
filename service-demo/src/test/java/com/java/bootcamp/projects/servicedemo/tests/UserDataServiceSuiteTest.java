@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class UserDataServiceTestSuite {
+public class UserDataServiceSuiteTest {
 
     private static UserDataService userDataService;
     private static UserData userData01;
@@ -32,7 +32,6 @@ public class UserDataServiceTestSuite {
     @Test
     @Order(1)
     public void testEmptyUserDataService() {
-
         assertTrue(userDataService.getSize() == 0);
         assertFalse(userDataService.getUserById(10L).isPresent());
         assertFalse(userDataService.getUserById(11L).isPresent());

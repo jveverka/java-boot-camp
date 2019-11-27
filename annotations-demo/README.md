@@ -4,4 +4,9 @@
 * __Compile-time__ and deployment-time processing — Software tools can process annotation information to generate code, XML files, and so forth.
 * __Runtime processing__ — Some annotations are available to be examined at runtime.
 
-More info is [here](https://dzone.com/articles/java-8-type-annotations) or [here](http://tutorials.jenkov.com/java/annotations.html). 
+More info is [here](https://dzone.com/articles/java-8-type-annotations) or [here](http://tutorials.jenkov.com/java/annotations.html).
+
+## Exercise
+Check how [ClassScanner](src/main/java/com/java/bootcamp/projects/annotations/ClassScanner.java) scans classes 
+for [annotation](src/main/java/com/java/bootcamp/projects/annotations/TypeMarker.java) presence.
+ 

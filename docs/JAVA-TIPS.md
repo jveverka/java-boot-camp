@@ -27,12 +27,14 @@ This guide is designed for maven, but same principles apply for gradle build too
 
 #### Project directory structure
 It is very important to follow [java/maven project directory structure](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html) conventions.
+Maven directory structure is used also in gradle projects as default.
 
 #### Build project
 You should be able to build your project using ``mvn clean install`` command.
 
 ## Always use logger
-Always use logger. Don't use ``System.out.println("my log statement")`` !
+Always use [logger](https://www.vogella.com/tutorials/Logging/article.html). 
+Don't use ``System.out.println("my log statement")`` for logging in yor code !
 
 ## Check your dependencies
 Use well known public maven repositories to check your project dependencies.

@@ -5,20 +5,14 @@
     
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.java.bootcamp</groupId>
-    <artifactId>bootcamp-aggregator</artifactId>
+    <groupId>com.java.bootcamp.projects.spring</groupId>
+    <artifactId>spring-aggregator</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
-    <name>bootcamp-aggregator</name>
+    <name>spring-aggregator</name>
 
     <modules>
-        <module>annotations-demo</module>
-        <module>simple-project</module>
-        <module>java-bean-demo</module>
-        <module>service-demo</module>
-        <module>mt-demo</module>
-        <module>lambdas</module>
-        <module>spring</module>
+        <module>spring-junit</module>
     </modules>
 
 </project>

@@ -7,8 +7,8 @@
 
 ### Environment setup
 Please make sure you have installed:
-* [Open JDK 8](https://adoptopenjdk.net/) or higher
-* [Apache maven 3.6.0](https://maven.apache.org/download.cgi) or higher
+* [Open JDK 11](https://adoptopenjdk.net/) or higher
+* [Apache maven 3.6.3](https://maven.apache.org/download.cgi) or higher
 
 ### How-to build this project
 ```

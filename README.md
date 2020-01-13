@@ -7,7 +7,7 @@
 
 ### Environment setup
 Please make sure you have installed:
-* [Open JDK 11](https://adoptopenjdk.net/) or higher
+* [Open JDK 11.0.5+10](https://adoptopenjdk.net/releases.html?variant=openjdk11&jvmVariant=hotspot) or higher 11.x version.
 * [Apache maven 3.6.3](https://maven.apache.org/download.cgi) or higher
 
 ### How-to build this project

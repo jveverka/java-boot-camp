@@ -12,6 +12,7 @@
     <name>bootcamp-aggregator</name>
 
     <modules>
+        <module>dependency-aggregator</module>
         <module>annotations-demo</module>
         <module>simple-project</module>
         <module>java-bean-demo</module>

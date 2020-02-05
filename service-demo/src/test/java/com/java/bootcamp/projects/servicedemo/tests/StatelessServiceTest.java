@@ -9,6 +9,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 import java.text.ParseException;
 import java.util.Date;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.fail;
 
@@ -26,6 +27,9 @@ public class StatelessServiceTest {
     public void testStatelessPositive(String dateTime) throws ParseException {
         Date date = statelessService.getDate(dateTime);
         assertNotNull(date);
+        String result = statelessService.getDate(date);
+        assertNotNull(result);
+        assertEquals(dateTime, result);
     }
 
     @ParameterizedTest
@@ -37,4 +41,5 @@ public class StatelessServiceTest {
         } catch (ParseException e) {
         }
     }
+
 }

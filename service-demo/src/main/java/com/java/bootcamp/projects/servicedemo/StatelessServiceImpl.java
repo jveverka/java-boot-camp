@@ -12,4 +12,10 @@ public class StatelessServiceImpl implements StatelessService {
         return dateFormat.parse(dateTime);
     }
 
+    @Override
+    public String getDate(Date date) {
+        SimpleDateFormat dateFormat = new SimpleDateFormat(DATE_TIME_FORMAT_IN);
+        return dateFormat.format(date);
+    }
+
 }

@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.java.bootcamp.projects</groupId>
-    <artifactId>service-demo</artifactId>
+    <artifactId>nameService-demo</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 

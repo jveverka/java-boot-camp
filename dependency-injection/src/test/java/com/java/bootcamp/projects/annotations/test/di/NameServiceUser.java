@@ -1,7 +1,7 @@
 package com.java.bootcamp.projects.annotations.test.di;
 
-import com.java.bootcamp.projects.di.InjectHere;
-import com.java.bootcamp.projects.di.ManagedService;
+import com.java.bootcamp.projects.di.annotations.InjectHere;
+import com.java.bootcamp.projects.di.annotations.ManagedService;
 
 @ManagedService
 public class NameServiceUser {

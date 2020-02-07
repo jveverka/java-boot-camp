@@ -1,5 +1,7 @@
 package com.java.bootcamp.projects.di;
 
+import com.java.bootcamp.projects.di.annotations.InjectableFactory;
+import com.java.bootcamp.projects.di.annotations.ManagedService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,14 +17,20 @@ import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 public class DependencyInjector {
 
     private static final Logger LOG = LoggerFactory.getLogger(DependencyInjector.class);
 
-    public static Map<Class<?>, Object> scanClassPath(String classPath) throws IOException, ClassNotFoundException {
+    private final Map<Class<?>, Object> managedServices;
+
+    public DependencyInjector() {
+        this.managedServices = new HashMap<>();
+    }
+
+    public void scanClassPath(String classPath) throws IOException, ClassNotFoundException {
         ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
-        Map<Class<?>, Object> managedServices = new HashMap<>();
         String normalizedClassPath = classPath.replace('.', '/');
         Enumeration<URL> resources = classLoader.getResources(normalizedClassPath);
 
@@ -108,7 +116,15 @@ public class DependencyInjector {
                 }
             }
         }
-        return managedServices;
+    }
+
+    public <T> Optional<T> getManagedService(Class<T> type) {
+        Object service = managedServices.get(type);
+        if (service != null) {
+            return Optional.of((T)service);
+        } else {
+            return Optional.empty();
+        }
     }
 
 }

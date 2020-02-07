@@ -1,6 +1,6 @@
 package com.java.bootcamp.projects.annotations.test.di;
 
-import com.java.bootcamp.projects.di.InjectableFactory;
+import com.java.bootcamp.projects.di.annotations.InjectableFactory;
 
 public class ServiceFactory {
 

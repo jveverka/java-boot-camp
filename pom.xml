@@ -14,6 +14,7 @@
     <modules>
         <module>dependency-aggregator</module>
         <module>annotations-demo</module>
+        <module>dependency-injection</module>
         <module>simple-project</module>
         <module>java-bean-demo</module>
         <module>service-demo</module>

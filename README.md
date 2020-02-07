@@ -22,6 +22,8 @@ mvn clean install
 * [__service-demo__](service-demo) - simple data store service.
 * [__mt-demo__](mt-demo) - multi-threading demo.
 * [__lambda expressions__](lambdas) - multi-threading demo.
+* [__annotations-demo__](annotations-demo) - annotation demo.
+* [__dependency-injection__](dependency-injection) - simple reflection based DI framework.
 
 ### How to fix bugs or contribute
 Check [this guide](https://github.com/jveverka/do-not-ask-why/blob/master/github/README.md) if you want to contribute.

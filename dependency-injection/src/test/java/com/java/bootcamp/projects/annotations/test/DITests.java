@@ -6,6 +6,7 @@ import com.java.bootcamp.projects.annotations.test.di.NameServiceUser;
 import com.java.bootcamp.projects.annotations.test.di.NotManagedService;
 import com.java.bootcamp.projects.annotations.test.di.SimpleService;
 import com.java.bootcamp.projects.di.DependencyInjector;
+import com.java.bootcamp.projects.di.DependencyInjectorImpl;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -21,7 +22,7 @@ public class DITests {
 
     @BeforeAll
     public static void init() throws IOException, ClassNotFoundException {
-        dependencyInjector = new DependencyInjector();
+        dependencyInjector = new DependencyInjectorImpl();
         dependencyInjector.scanClassPath("com.java.bootcamp.projects.annotations.test.di");
     }
 

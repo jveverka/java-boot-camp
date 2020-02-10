@@ -17,7 +17,7 @@ mvn clean install
 
 ### Projects
 * [__java tips__](docs/JAVA-TIPS.md) - documentation project with basic java tips.
-* [__http-details__](docs/http-details.md)
+* [__http-details__](docs/http-details.md) - family http related protocols (RFCs). 
 * [__simple-project__](simple-project) - simple maven java project.
 * [__java-beans-demo__](java-bean-demo) - fasterxml jackson serialization and deserialization of java beans.
 * [__service-demo__](service-demo) - simple data store service.

@@ -1,5 +1,6 @@
 # HTTP protocol details
-Java is used quite often to write web application backends.
+Java is used quite often to write web applications or so called backend services.
+Most used communication protocols in java world is family of http related protocols.
 This document contains top-level protocol RFCs list. It is highly recommended 
 to get basic overview about these RFCs. 
 

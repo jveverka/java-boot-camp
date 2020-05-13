@@ -8,23 +8,29 @@
 ### Environment setup
 Please make sure you have installed:
 * [Open JDK 11.0.5+10](https://adoptopenjdk.net/releases.html?variant=openjdk11&jvmVariant=hotspot) or higher 11.x version.
-* [Apache maven 3.6.3](https://maven.apache.org/download.cgi) or higher
+* [Apache maven 3.6.3](https://maven.apache.org/download.cgi) or higher.
+* [git scm](https://git-scm.com/) source code management.
+* Install IDE of your choice or use [IntelliJ IDEA](https://www.jetbrains.com/idea/download/).
 
 ### How-to build this project
 ```
+git clone https://github.com/jveverka/java-boot-camp.git
+cd java-boot-camp
 mvn clean install
 ```
 
-### Projects
-* [__java tips__](docs/JAVA-TIPS.md) - documentation project with basic java tips.
+### Examples and Lessons
+1. [__java tips__](docs/JAVA-TIPS.md) - documentation project with basic java tips.
+2. [__simple-project__](simple-project) - very simple maven java project.
+3. [__lambda expressions__](lambdas) - lambda expression examples.
+4. [__mt-demo__](mt-demo) - multi-threading demo.
+5. [__annotations-demo__](annotations-demo) - annotation demo.
+6. [__java-beans-demo__](java-bean-demo) - JSON serialization and deserialization of java beans.
+7. [__service-demo__](service-demo) - simple data store service.
+8. [__dependency-injection__](dependency-injection) - simple reflection based DI framework.
+
+### Related Topics
 * [__http-details__](docs/http-details.md) - family http related protocols (RFCs). 
-* [__simple-project__](simple-project) - simple maven java project.
-* [__java-beans-demo__](java-bean-demo) - fasterxml jackson serialization and deserialization of java beans.
-* [__service-demo__](service-demo) - simple data store service.
-* [__mt-demo__](mt-demo) - multi-threading demo.
-* [__lambda expressions__](lambdas) - multi-threading demo.
-* [__annotations-demo__](annotations-demo) - annotation demo.
-* [__dependency-injection__](dependency-injection) - simple reflection based DI framework.
 
 ### How to fix bugs or contribute
 Check [this guide](https://github.com/jveverka/do-not-ask-why/blob/master/github/README.md) if you want to contribute.

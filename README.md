@@ -12,7 +12,7 @@ Please make sure you have installed:
 * [git scm](https://git-scm.com/) source code management.
 * Install IDE of your choice or use [IntelliJ IDEA](https://www.jetbrains.com/idea/download/).
 
-### How-to build this project
+### Clone and build this project
 ```
 git clone https://github.com/jveverka/java-boot-camp.git
 cd java-boot-camp
@@ -30,6 +30,7 @@ mvn clean install
 8. [__dependency-injection__](dependency-injection) - simple reflection based DI framework.
 
 ### Related Topics
+* [__Understanding JVM__](https://dzone.com/articles/understanding-jvm-internals) - Java Virtual Machine Internals explained.
 * [__http-details__](docs/http-details.md) - family http related protocols (RFCs). 
 
 ### How to fix bugs or contribute

@@ -11,6 +11,11 @@
     <packaging>pom</packaging>
     <name>bootcamp-aggregator</name>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
     <modules>
         <module>dependency-aggregator</module>
         <module>annotations-demo</module>

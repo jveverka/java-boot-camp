@@ -18,6 +18,7 @@ git clone https://github.com/jveverka/java-boot-camp.git
 cd java-boot-camp
 mvn clean install
 ```
+Open project in [IntelliJ IDEA](docs/ide-instructions.md).
 
 ### Examples and Lessons
 1. [__java tips__](docs/JAVA-TIPS.md) - documentation project with basic java tips.
@@ -32,6 +33,7 @@ mvn clean install
 ### Related Topics
 * [__Understanding JVM__](https://dzone.com/articles/understanding-jvm-internals) - Java Virtual Machine Internals explained.
 * [__http-details__](docs/http-details.md) - family http related protocols (RFCs). 
+* [__Spring Initializr__](https://start.spring.io/) - generate your first spring project __now__ !
 
 ### How to fix bugs or contribute
 Check [this guide](https://github.com/jveverka/do-not-ask-why/blob/master/github/README.md) if you want to contribute.

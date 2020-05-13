@@ -13,4 +13,4 @@ Start IDE on your PC and follow instructions.
 ## 3. Explore Examples and Lessons
 Main __java-boot-camp__ project is actually 
 [maven](https://maven.apache.org/) [multi-module](https://maven.apache.org/guides/mini/guide-multiple-modules.html) project.
-Feel free to explore modules - [subprojects](../..).
+Feel free to explore modules - [subprojects](../README.md).

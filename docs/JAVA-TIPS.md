@@ -3,8 +3,10 @@
 ## Installing Java
 When installing java, you may install __JRE__ (Java Runtime Environment) or __JDK__ (Java Development Kit).
 On production servers JRE is enough, on development machine you need JDK installed. 
-Do not use [Oracle java](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) (because of license issues)! 
-* [Java 8](https://adoptopenjdk.net/releases.html?variant=openjdk8&jvmVariant=hotspot) - download (if you have to) ZIP JDK package.
+
+WARNING: DO NOT use [Oracle java](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) (because of possible license issues)! 
+
+* [Java 8](https://adoptopenjdk.net/releases.html?variant=openjdk8&jvmVariant=hotspot) - download ZIP JDK package.
 * [Java 11](https://adoptopenjdk.net/releases.html?variant=openjdk11&jvmVariant=hotspot) - download ZIP JDK package.
 
 After downloading ZIP package, unzip it into target directory and set PATH and JAVA_HOME environment variables.

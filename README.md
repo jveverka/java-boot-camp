@@ -21,14 +21,15 @@ mvn clean install
 Open project in [IntelliJ IDEA](docs/ide-instructions.md).
 
 ### Examples and Lessons
-1. [__java tips__](docs/JAVA-TIPS.md) - documentation project with basic java tips.
-2. [__simple-project__](simple-project) - very simple maven java project.
-3. [__lambda expressions__](lambdas) - lambda expression examples.
-4. [__mt-demo__](mt-demo) - multi-threading demo.
-5. [__annotations-demo__](annotations-demo) - annotation demo.
-6. [__java-beans-demo__](java-bean-demo) - JSON serialization and deserialization of java beans.
-7. [__service-demo__](service-demo) - simple data store service.
-8. [__dependency-injection__](dependency-injection) - simple reflection based DI framework.
+1. [__java tips__](docs/JAVA-TIPS.md) - an introduction to java ecosystem.
+2. [__programming tips__](docs/JAVA-Programming.md) - tips for better code quality.
+3. [__simple-project__](simple-project) - very simple maven java project.
+4. [__lambda expressions__](lambdas) - lambda expression examples.
+5. [__mt-demo__](mt-demo) - multi-threading demo.
+6. [__annotations-demo__](annotations-demo) - annotation demo.
+7. [__java-beans-demo__](java-bean-demo) - JSON serialization and deserialization of java beans.
+8. [__service-demo__](service-demo) - simple data store service.
+9. [__dependency-injection__](dependency-injection) - simple reflection based DI framework.
 
 ### Related Topics
 * [__Understanding JVM__](https://dzone.com/articles/understanding-jvm-internals) - Java Virtual Machine Internals explained.

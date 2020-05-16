@@ -25,16 +25,17 @@ Always use [maven](https://maven.apache.org/download.cgi) or [gradle](https://gr
 Do not use projects created by your IDE, because different IDEs may be used on same project !
 This guide is designed for maven, but same principles apply for gradle build tool as well.
 
+#### Use proper groupName, artefactId and version
+Build result of java project is artefact - [jar](https://en.wikipedia.org/wiki/JAR_(file_format)), [war](https://en.wikipedia.org/wiki/WAR_(file_format)), or zip file. 
+Always use [proper artefact naming](http://maven.apache.org/guides/mini/guide-naming-conventions.html) for your project atefacts.   
+Use [semantic versioning](https://semver.org/) for you projects.
+
 #### Project directory structure
 It is very important to follow [java/maven project directory structure](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html) conventions.
 Maven directory structure is used also in gradle projects as default.
 
 #### Build project
-You should be able to build your project using ``mvn clean install`` command.
-
-## Always use logger
-Always use [logger](https://www.vogella.com/tutorials/Logging/article.html). 
-Don't use ``System.out.println("my log statement")`` for logging in yor code !
+You should be able to build your project using ``mvn clean install`` command or ``gradle clean build`` command.
 
 ## Check your dependencies
 Use well known public maven repositories to check your project dependencies.
@@ -43,9 +44,6 @@ Use well known public maven repositories to check your project dependencies.
 * [spring.io](https://repo.spring.io)
 
 Use up-to date dependencies. Maven command ``mvn dependency:tree -Dverbose``
-
-## Create JUnit tests
-Use [JUnit](https://junit.org/junit4/) to create automated tests.
 
 ## Recommended Java projects and libraries
 When you are looking for java framework or library:
@@ -56,4 +54,3 @@ When you are looking for java framework or library:
 * [Linux Foundation](https://www.linuxfoundation.org/projects/)
 * [Eclipse Foundation](https://projects.eclipse.org/)
 * [Apache foundation](https://www.apache.org/index.html#projects-list)
-

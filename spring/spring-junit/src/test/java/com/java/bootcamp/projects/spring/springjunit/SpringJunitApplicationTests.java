@@ -1,5 +1,6 @@
 package com.java.bootcamp.projects.spring.springjunit;
 
+import com.java.bootcamp.projects.spring.springjunit.dto.ObjectKey;
 import com.java.bootcamp.projects.spring.springjunit.service.CacheService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,23 +21,26 @@ class SpringJunitApplicationTests {
 	@Test
 	void contextLoads() {
 
+		ObjectKey validKey = ObjectKey.from("s1");
+		ObjectKey invalidKey = ObjectKey.from("xx");
+
 		assertTrue(cacheService.getSize() == 0);
 
-		cacheService.put("s1", "value");
-		Optional<String> value = cacheService.get("s1", String.class);
+		cacheService.put(validKey, "value");
+		Optional<String> value = cacheService.get(validKey, String.class);
 
 		assertTrue(cacheService.getSize() == 1);
 		assertTrue(value.isPresent());
 		assertEquals(value.get(), "value");
 
-		value = cacheService.get("xx", String.class);
+		value = cacheService.get(invalidKey, String.class);
 		assertFalse(value.isPresent());
 
-		boolean removed = cacheService.remove("s1");
+		boolean removed = cacheService.remove(validKey);
 		assertTrue(removed);
 		assertTrue(cacheService.getSize() == 0);
 
-		removed = cacheService.remove("s1");
+		removed = cacheService.remove(validKey);
 		assertFalse(removed);
 		assertTrue(cacheService.getSize() == 0);
 

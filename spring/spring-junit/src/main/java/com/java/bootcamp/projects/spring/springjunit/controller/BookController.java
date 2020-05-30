@@ -19,7 +19,7 @@ import java.util.Collection;
 import java.util.Optional;
 
 @RestController
-@RequestMapping(path="/books")
+@RequestMapping("/books")
 public class BookController {
 
     private static final Logger LOG = LoggerFactory.getLogger(BookController.class);
@@ -38,7 +38,7 @@ public class BookController {
         return ResponseEntity.ok(objectKey);
     }
 
-    @DeleteMapping(path="/{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity<ObjectKey> deleteBook(@PathVariable(value="id") String id) {
         LOG.info("deleteBook: {}", id);
         ObjectKey objectKey = ObjectKey.from(id);
@@ -46,7 +46,7 @@ public class BookController {
         return ResponseEntity.ok(objectKey);
     }
 
-    @GetMapping(path="/{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<Book> getBook(@PathVariable(value="id") String id) {
         LOG.info("getBook: {}", id);
         ObjectKey objectKey = ObjectKey.from(id);

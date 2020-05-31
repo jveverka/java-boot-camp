@@ -2,6 +2,7 @@ package com.java.bootcamp.projects.spring.springjunit;
 
 import com.java.bootcamp.projects.spring.springjunit.dto.Book;
 import com.java.bootcamp.projects.spring.springjunit.dto.ObjectKey;
+import com.java.bootcamp.projects.spring.springjunit.dto.SystemInfo;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
@@ -83,10 +84,23 @@ public class RESTApplicationTest {
         checkBooks(0);
     }
 
+    @Test
+    @Order(8)
+    public void testSystemInfo() throws MalformedURLException {
+        ResponseEntity<SystemInfo> response = restTemplate.getForEntity(
+                new URL("http://localhost:" + port + "/system/info").toString(), SystemInfo.class);
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+        SystemInfo systemInfo = response.getBody();
+        assertNotNull(systemInfo);
+        assertNotNull(systemInfo.getAppName());
+        assertNotNull(systemInfo.getTimeStamp());
+        assertNotNull(systemInfo.getAppId());
+    }
+
     private ObjectKey addBook(Book book) throws MalformedURLException {
-        ResponseEntity<ObjectKey> response1 = restTemplate.postForEntity(new URL("http://localhost:" + port + "/books").toString(), book, ObjectKey.class);
-        assertEquals(HttpStatus.OK, response1.getStatusCode());
-        ObjectKey bookKey = response1.getBody();
+        ResponseEntity<ObjectKey> response = restTemplate.postForEntity(new URL("http://localhost:" + port + "/books").toString(), book, ObjectKey.class);
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+        ObjectKey bookKey = response.getBody();
         assertNotNull(bookKey);
         books.put(bookKey, book);
         return bookKey;

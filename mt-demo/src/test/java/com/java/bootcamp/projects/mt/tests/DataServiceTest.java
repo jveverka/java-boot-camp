@@ -7,6 +7,7 @@ import com.java.bootcamp.projects.mt.executor.dto.Response;
 import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -17,9 +18,9 @@ public class DataServiceTest {
     @Test
     public void testBackgroundDataProcessing() throws Exception {
         DataService dataService = new DataServiceImpl(8);
-        Future<Response> data1 = dataService.getData(new Request(1L, 10, 1000));
-        Future<Response> data2 = dataService.getData(new Request(2L, 1, 10000));
-        Future<Response> data3 = dataService.getData(new Request(3L, 5, 2000));
+        Future<Response> data1 = dataService.getData(new Request(1L, 10, 1, TimeUnit.SECONDS));
+        Future<Response> data2 = dataService.getData(new Request(2L, 2, 3, TimeUnit.SECONDS));
+        Future<Response> data3 = dataService.getData(new Request(3L, 5, 2, TimeUnit.SECONDS));
 
         String thisThreadName = Thread.currentThread().getName();
 

@@ -9,9 +9,10 @@ import org.junit.jupiter.api.Test;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+
 
 public class DataServiceTest {
 
@@ -25,15 +26,15 @@ public class DataServiceTest {
         String thisThreadName = Thread.currentThread().getName();
 
         assertNotNull(data1.get());
-        assertTrue(data1.get().getRequestId() == 1L);
+        assertEquals(1L, data1.get().getRequestId());
         assertFalse(thisThreadName.equals(data1.get().getThreadName()));
 
         assertNotNull(data2.get());
-        assertTrue(data2.get().getRequestId() == 2L);
+        assertEquals(2L, data2.get().getRequestId());
         assertFalse(thisThreadName.equals(data2.get().getThreadName()));
 
         assertNotNull(data3.get());
-        assertTrue(data3.get().getRequestId() == 3L);
+        assertEquals(3L,  data3.get().getRequestId());
         assertFalse(thisThreadName.equals(data3.get().getThreadName()));
 
         dataService.close();

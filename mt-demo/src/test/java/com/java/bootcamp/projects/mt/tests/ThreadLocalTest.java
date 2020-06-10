@@ -16,7 +16,7 @@ public class ThreadLocalTest {
 
     @Test
     public void testThreadLocal() throws Exception {
-        Processor processor = new ProcessorImpl(8);
+        Processor processor = new ProcessorImpl();
 
         Request request1 = new Request("r1");
         TaskContext tc1 = new TaskContext("joe", "user");
@@ -27,16 +27,16 @@ public class ThreadLocalTest {
         Future<Response> f2 = processor.getData(request2, tc2);
 
         assertNotNull(f1.get());
-        assertEquals(f1.get().getRequest(), "r1");
-        assertEquals(f1.get().getResponse(), "response");
-        assertEquals(f1.get().getThreadLocalContext(), "joe");
-        assertEquals(f1.get().getStaticContext(), "jane");
+        assertEquals("r1", f1.get().getRequest());
+        assertEquals("response", f1.get().getResponse());
+        assertEquals("joe", f1.get().getThreadLocalContext());
+        assertEquals("jane", f1.get().getStaticContext());
 
         assertNotNull(f2.get());
-        assertEquals(f2.get().getRequest(), "r2");
-        assertEquals(f2.get().getResponse(), "response");
-        assertEquals(f2.get().getThreadLocalContext(), "jane");
-        assertEquals(f1.get().getStaticContext(), "jane");
+        assertEquals("r2", f2.get().getRequest());
+        assertEquals("response", f2.get().getResponse());
+        assertEquals("jane", f2.get().getThreadLocalContext());
+        assertEquals("jane", f1.get().getStaticContext());
 
     }
 

@@ -9,10 +9,6 @@ import java.util.concurrent.Future;
 
 public class ProcessorImpl implements Processor {
 
-
-    public ProcessorImpl(int threadPoolSize) {
-    }
-
     @Override
     public Future<Response> getData(Request request, TaskContext taskContext) {
         CompletableFuture<Response> response = new CompletableFuture<>();

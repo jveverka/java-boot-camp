@@ -31,6 +31,10 @@ Open project in [IntelliJ IDEA](docs/ide-instructions.md).
 8. [__service-demo__](service-demo) - simple data store service.
 9. [__dependency-injection__](dependency-injection) - simple reflection based DI framework.
 
+### Advanced Examples 
+1. [__JavaSE__](https://github.com/jveverka/java-11-examples) - Advanced JavaSE examples.
+2. [__SpringBoot__](https://github.com/jveverka/spring-examples) - Advanced SpringBoot examples.
+
 ### Related Topics
 * [__Understanding JVM__](https://dzone.com/articles/understanding-jvm-internals) - Java Virtual Machine Internals explained.
 * [__http-details__](docs/http-details.md) - family http related protocols (RFCs). 

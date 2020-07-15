@@ -1,4 +1,5 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Maven](https://img.shields.io/badge/maven-3.6-blue)](https://img.shields.io/badge/maven-3.6-blue)
 [![Build Status](https://travis-ci.org/jveverka/java-boot-camp.svg?branch=master)](https://travis-ci.org/jveverka/java-boot-camp)
 
 # Java Boot Camp

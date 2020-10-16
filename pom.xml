@@ -24,6 +24,7 @@
         <module>java-bean-demo</module>
         <module>service-demo</module>
         <module>mt-demo</module>
+        <module>mt-testing</module>
         <module>lambdas</module>
         <module>spring</module>
     </modules>

@@ -1,7 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Java11](https://img.shields.io/badge/java-11-blue)](https://img.shields.io/badge/java-11-blue)
 [![Maven](https://img.shields.io/badge/maven-3.6-blue)](https://img.shields.io/badge/maven-3.6-blue)
-[![Build Status](https://travis-ci.com/jveverka/java-boot-camp.svg?branch=master)](https://travis-ci.com/jveverka/java-boot-camp)
 
 # Java Boot Camp
 
@@ -22,16 +21,17 @@ mvn clean install
 ```
 Open project in [IntelliJ IDEA](docs/ide-instructions.md).
 
-### Examples and Lessons
-1. [__java tips__](docs/JAVA-TIPS.md) - an introduction to java ecosystem.
-2. [__programming tips__](docs/JAVA-Programming.md) - tips for better code quality.
-3. [__simple-project__](simple-project) - very simple maven java project.
-4. [__lambda expressions__](lambdas) - lambda expression examples.
-5. [__mt-demo__](mt-demo) - multi-threading demo.
-6. [__annotations-demo__](annotations-demo) - annotation demo.
-7. [__java-beans-demo__](java-bean-demo) - JSON serialization and deserialization of java beans.
-8. [__service-demo__](service-demo) - simple data store service.
-9. [__dependency-injection__](dependency-injection) - simple reflection based DI framework.
+### Examples and Lessons 
+ 1. [__java tips__](docs/JAVA-TIPS.md) - an introduction to java ecosystem.
+ 2. [__programming tips__](docs/JAVA-Programming.md) - tips for better code quality.
+ 3. [__simple-project__](simple-project) - very simple maven java project.
+ 4. [__lambda expressions__](lambdas) - lambda expression examples.
+ 5. [__mt-demo__](mt-demo) - multi-threading demo.
+ 6. [__annotations-demo__](annotations-demo) - annotation demo.
+ 7. [__java-beans-demo__](java-bean-demo) - JSON serialization and deserialization of java beans.
+ 8. [__service-demo__](service-demo) - simple data store service.
+ 9. [__dependency-injection__](dependency-injection) - simple reflection based DI framework.
+10. [__mt-testing__](mt-testing) - multi-threading junit tests.
 
 ### Advanced Examples 
 1. [__JavaSE__](https://github.com/jveverka/java-11-examples) - Advanced JavaSE examples.

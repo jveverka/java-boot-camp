@@ -35,8 +35,9 @@ Open project in [IntelliJ IDEA](docs/ide-instructions.md).
 10. [__mt-testing__](mt-testing) - multi-threading junit tests.
 
 ### Advanced Examples 
-1. [__JavaSE__](https://github.com/jveverka/java-11-examples) - Advanced JavaSE examples.
-2. [__SpringBoot__](https://github.com/jveverka/spring-examples) - Advanced SpringBoot examples.
+* [__Java 11 Examples__](https://github.com/jveverka/java-11-examples) - Advanced Java 11 examples.
+* [__Java 17 Examples__](https://github.com/jveverka/java-17-examples) - Advanced Java 17 examples.
+* [__Spring Boot Examples__](https://github.com/jveverka/spring-examples) - Advanced SpringBoot examples.
 
 ### Related Topics
 * [__Understanding JVM__](https://dzone.com/articles/understanding-jvm-internals) - Java Virtual Machine Internals explained.

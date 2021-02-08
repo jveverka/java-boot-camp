@@ -1,5 +1,5 @@
 # Standard Java 11 Modules and APIs
-This is the list of most notable Java 11 modules and packages.
+This is the list of most notable Java 11 modules and packages to start with.
 
 * [java.base](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/module-summary.html) - base module, set of common Java APIs.
   * java.io - system input and output through data streams, serialization and the file system.
@@ -15,6 +15,7 @@ This is the list of most notable Java 11 modules and packages.
 * [jdk.jshell](https://docs.oracle.com/en/java/javase/11/docs/api/jdk.jshell/module-summary.html) - Read-Eval-Print Loops (REPLs)
 
 ### References
-* [JavaSE 11 API Specification](https://docs.oracle.com/en/java/javase/11/docs/api/index.html)
+* [JavaSE 11 API Specification](https://docs.oracle.com/en/java/javase/11/docs/api/index.html) - all modules.
 * [90 New Features and APIs in JDK 11 - Part1](https://dzone.com/articles/90-new-features-and-apis-in-jdk-11)
 * [90 New Features and APIs in JDK 11 - Part2](https://dzone.com/articles/90-new-features-and-apis-in-jdk-11-part-2)
+* [All packages](https://docs.oracle.com/en/java/javase/11/docs/api/allpackages-index.html)

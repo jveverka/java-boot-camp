@@ -11,3 +11,13 @@ E = abs( sum( frequency(char(i)) * log2(frequency(char(i)) ) ) )
 
 ## References
 * [Shannon entropy calculator](https://www.shannonentropy.netmark.pl/)
+
+## Build and test
+```
+mvn clean install
+```
+## Mutation testing
+```
+mvn clean install org.pitest:pitest-maven:mutationCoverage
+```
+Mutation test report is in ``target/pit-reports`` 

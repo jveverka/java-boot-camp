@@ -28,12 +28,13 @@ Open project in [IntelliJ IDEA](docs/ide-instructions.md).
  3. [__Java Modules and APIs__](docs/JAVA-APIs.md) - list of important Java Modules and Standard APIs.  
  4. [__simple-project__](simple-project) - very simple maven java project.
  5. [__lambda expressions__](lambdas) - lambda expression examples.
- 6. [__mt-demo__](mt-demo) - multi-threading demo.
- 7. [__annotations-demo__](annotations-demo) - annotation demo.
- 8. [__java-beans-demo__](java-bean-demo) - JSON serialization and deserialization of java beans.
- 9. [__service-demo__](service-demo) - simple data store service.
-10. [__dependency-injection__](dependency-injection) - simple reflection based DI framework.
-11. [__mt-testing__](mt-testing) - multi-threading junit tests.
+ 6. [__entropy-demo__](entropy-demo) - entropy calculation, parametric tests and mutation testing.   
+ 7. [__mt-demo__](mt-demo) - multi-threading demo.
+ 8. [__annotations-demo__](annotations-demo) - annotation demo.
+ 9. [__java-beans-demo__](java-bean-demo) - JSON serialization and deserialization of java beans.
+10. [__service-demo__](service-demo) - simple data store service.
+11. [__dependency-injection__](dependency-injection) - simple reflection based DI framework.
+12. [__mt-testing__](mt-testing) - multi-threading junit tests.
 
 ### Advanced Examples 
 * [__Java 11 Examples__](https://github.com/jveverka/java-11-examples) - Advanced Java 11 examples.

@@ -1,13 +1,14 @@
 # Entropy demo
-This simple demo shows how to calculate entropy vale for variable data.
+This simple demo shows how to calculate entropy value for variable data.
 
 ```
 E = abs( sum( frequency(char(i)) * log2(frequency(char(i)) ) ) )
 ```
 * __E__ - information entropy
 * __abs( )__ - absolute value
-* __sum( )__ - sum of values
-* __frequency(char(i))__ - frequency of character at position i
+* __sum( )__ - sum of all values for index __i__
+* __frequency(char(i))__ - frequency of character at position __i__
+* __log2( )__ - binary logarithm
 
 ## References
 * [Shannon entropy calculator](https://www.shannonentropy.netmark.pl/)

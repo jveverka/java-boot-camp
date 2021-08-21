@@ -6,8 +6,8 @@ On production servers JRE is enough, on development machine you need JDK install
 
 WARNING: DO NOT use [Oracle java](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) (because of possible license issues)! 
 
-* [Java 8](https://adoptopenjdk.net/releases.html?variant=openjdk8&jvmVariant=hotspot) - download ZIP JDK package.
-* [Java 11](https://adoptopenjdk.net/releases.html?variant=openjdk11&jvmVariant=hotspot) - download ZIP JDK package.
+* [Java 8](https://adoptium.net/?variant=openjdk8&jvmVariant=hotspot) - download ZIP JDK package.
+* [Java 11](https://adoptium.net/?variant=openjdk11&jvmVariant=hotspot) - download ZIP JDK package.
 
 After downloading ZIP package, unzip it into target directory and set PATH and JAVA_HOME environment variables.
 

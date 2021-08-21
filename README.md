@@ -9,7 +9,7 @@
 
 ### Environment setup
 Please make sure you have installed:
-* [Open JDK 11.0.10+9](https://adoptopenjdk.net/releases.html?variant=openjdk11&jvmVariant=hotspot) or higher 11.x version, [install tips](docs/JAVA-TIPS.md).
+* [Open JDK 11.0.10+9](https://adoptium.net/?variant=openjdk11&jvmVariant=hotspot).
 * [Apache maven 3.6.3](https://maven.apache.org/download.cgi) or higher.
 * [git scm](https://git-scm.com/) source code management.
 * Install IDE of your choice or use [IntelliJ IDEA](https://www.jetbrains.com/idea/download/).
